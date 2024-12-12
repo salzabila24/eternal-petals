@@ -1,0 +1,129 @@
+.nav-link {
+    color: #d37a7a;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 10px 15px; /* Adds padding for better click area */
+
+}
+
+.nav-link:hover {
+    color: #dbc669;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ccc375;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+}
+
+.nav-item {
+    margin-left: 15px; /* Adjusts spacing between items */
+}
+
+.badge-notification {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    font-size: 0.7rem;
+}
+
+#home {
+    position: relative; /* Mengatur posisi relatif untuk anak-anak */
+    height: 100vh; /* Tinggi section 100% dari viewport */
+    background-image: url('header.jpeg'); /* Gambar latar belakang */
+    background-size: cover; /* Memastikan gambar mengisi seluruh area */
+    background-position: center; /* Menempatkan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+}
+
+.hero-section {
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    padding: 245px 20px; /* Memberikan padding untuk ruang */
+    border-radius: 0; /* Menghapus sudut melengkung */
+    box-shadow: none; /* Menghapus bayangan */
+    width: 100%; /* Memastikan lebar penuh */
+    height: 100%; /* Mengatur tinggi penuh untuk mencakup seluruh halaman */
+    position: absolute; /* Mengatur posisi */
+    top: 0; /* Menempatkan di bagian atas */
+    left: 0; /* Menempatkan di bagian kiri */
+    z-index: 1; /* Menjaga konten di atas latar belakang */
+}
+
+.container {
+    position: relative; /* Agar konten tetap di atas latar belakang */
+    z-index: 2; /* Menjaga konten di atas .hero-section */
+}
+
+
+h1 {
+    font-size: 3rem; /* Ukuran font lebih besar untuk judul */
+    color: #f8f9fa;
+    margin-bottom: 20px; /* Jarak di bawah judul */
+    font-family: 'Lora', serif;
+
+}
+
+.lead {
+    font-size: 1.25rem; /* Ukuran font untuk deskripsi */
+    color: #f8f9fa;
+    margin-bottom: 30px; /* Jarak di bawah deskripsi */
+}
+
+.btn-primary {
+    background-color: #d3c993; /* Warna tombol */
+    border-color: #b6bba2; /* Border warna tombol */
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 1.2rem; /* Ukuran font tombol */
+    border-radius: 5px; /* Sudut tombol melengkung */
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-card {
+    border-left: 4px solid #d3c993;
+}
+
+.card-title {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.card-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+}
+
+.team-member img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section {
+    padding: 80px 0;
+}
+
+#profile {
+    background-color: #f8f9fa;
+}
